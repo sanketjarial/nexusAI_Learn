@@ -10,6 +10,13 @@ import {
 import { User } from '../../users/entities/user.entity';
 import { Task } from './task.entity';
 
+/**
+ * Entity representing a study or learning plan in the system.
+ * @class
+ * @description Plans are organized collections of tasks that help users structure their learning.
+ * Each plan belongs to a user and can contain multiple tasks. Plans can include metadata for
+ * additional configuration and tracking information.
+ */
 @Entity('plans')
 export class Plan {
   @PrimaryGeneratedColumn('uuid')

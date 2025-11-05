@@ -7,6 +7,12 @@ import {
 } from 'typeorm';
 import { Plan } from './plan.entity';
 
+/**
+ * Entity representing a task within a learning plan.
+ * @class
+ * @description Tasks are individual items within a plan that track specific learning objectives or activities.
+ * Each task has a title, due date, and completion status, and is associated with a specific plan.
+ */
 @Entity('tasks')
 export class Task {
   @PrimaryGeneratedColumn('uuid')

@@ -10,6 +10,12 @@ import { Conversation } from './conversation.entity';
 
 export type SenderType = 'user' | 'system' | 'assistant';
 
+/**
+ * Entity representing a chat message in the system.
+ * @class
+ * @description Messages are part of conversations and can be sent by users, the system, or AI assistants.
+ * Each message maintains its content, metadata, and relationship to its conversation.
+ */
 @Entity('messages')
 export class Message {
   @PrimaryGeneratedColumn('uuid')

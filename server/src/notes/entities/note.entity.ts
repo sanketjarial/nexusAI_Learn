@@ -9,6 +9,13 @@ import {
 } from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 
+/**
+ * Entity representing a user's note in the system.
+ * @class
+ * @description Notes are user-created content that can be used for study and reference.
+ * Each note includes a title, body content, and vector embeddings for semantic search capabilities.
+ * Notes are associated with specific users and track creation/update times.
+ */
 @Entity('notes')
 export class Note {
   @PrimaryGeneratedColumn('uuid')
